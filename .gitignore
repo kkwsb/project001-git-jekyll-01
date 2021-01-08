@@ -1,0 +1,41 @@
+# Don't try to do inline comments.  Things break.
+
+# Ignore secrets
+/.env
+/*.env
+/*.env-*
+
+# Ignore clutter from Netlify CLI if using it
+.netlify
+/.netlify
+/.netlify/**
+
+# Ignore clutter from Jekyll if using it
+.jekyll-cache
+/.jekyll-cache
+/.jekyll-cache/**
+
+# Ignore clutter from Gatsby if using it
+.cache
+/.cache
+/.cache/**
+
+# Ignore "node_modules"
+/node_modules/
+/node_modules/**
+
+# Ignore "dist", my static output folder
+/dist/
+/dist/**
+
+# Ignore "public", another possible static output folder
+/public/
+/public/**
+
+# Ignore "_site", another possible static output folder
+/_site/
+/_site/**
+
+# Ignore "output", another possible static output folder
+/output/
+/output/**

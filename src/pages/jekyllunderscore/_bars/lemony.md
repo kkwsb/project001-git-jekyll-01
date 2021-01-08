@@ -1,7 +1,8 @@
 ---
 slug: lemonbarunderscore
+attentiongetter: sour
 message: "Lemon bar"
-lookandfeel: sugary
+layout: sugary
 ---
 
 EAT A LEMON BAR

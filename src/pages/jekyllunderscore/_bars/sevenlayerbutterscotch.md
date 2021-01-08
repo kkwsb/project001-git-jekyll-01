@@ -1,7 +1,8 @@
 ---
 slug: allsevenunderscore
-message: lorem-ipsum
-lookandfeel: sugary
+attentiongetter: Butterscotch
+message: Coconut, too
+layout: sugary
 ---
 ## Lorem ipsum
 

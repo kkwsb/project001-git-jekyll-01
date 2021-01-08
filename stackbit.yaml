@@ -1,0 +1,8 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+
+metadata:
+  title: Git-Jekyll MVB 01
+  description: A Git-Jekyll minimum viable build
+  author: Katie Kodes
+  authorURL: 'https://katiekodes.com'

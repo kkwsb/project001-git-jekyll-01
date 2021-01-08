@@ -1,0 +1,27 @@
+# _config.yml is for configuring Jekyll as the SSG.  See https://jekyllrb.com/docs/configuration/ and https://jekyllrb.com/docs/configuration/default/
+
+# Jekyll automatically ignores trying to build HTML out of folders starting w/ an underscore, unless you opt them back in over here.
+
+source: ./src
+destination: ./_site # Default, but since I'm changing the source, I wanted to make that clear
+
+overall: katie
+hello: world
+
+# Use "exclude" to make sure Jekyll doesn't parse files like stackbit.yaml, package.json, or netlify.toml as data sources for HTML rendering
+# Default excludes:  ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+#exclude:
+#  - pages/zanimals
+#  - README.md
+#  - stackbit.yaml
+#  - package.json
+#  - netlify.toml
+
+collections_dir: ./src/pages/jekyllunderscore
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      permalink: /wish-i-could-ignore-non-collection-pages/:basename/ # Not sure why this stopped handling `testytest.md` at the root

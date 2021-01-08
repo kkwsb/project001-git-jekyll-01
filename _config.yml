@@ -10,12 +10,8 @@ hello: world
 
 # Use "exclude" to make sure Jekyll doesn't parse files like stackbit.yaml, package.json, or netlify.toml as data sources for HTML rendering
 # Default excludes:  ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-#exclude:
-#  - pages/zanimals
-#  - README.md
-#  - stackbit.yaml
-#  - package.json
-#  - netlify.toml
+exclude:
+  - hand_exclude_me.md
 
 collections_dir: ./src/pages/jekyllunderscore
 

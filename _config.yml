@@ -12,8 +12,14 @@ hello: world
 # Default excludes:  ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 exclude:
   - hand_exclude_me.md
+  - pages # Don't worry -- we'll opt back in what we need to opt back in with collections.  This keeps "cat" and "dog" from rendering.
 
-collections_dir: ./src/pages/jekyllunderscore
+collections_dir: pages/jekyllunderscore
+collections:
+  bars: # Per https://talk.jekyllrb.com/t/how-all-collections-inside-one-subdirectory-works/1034/2, you still have to hand-"output: true" each collection subdir
+    output: true
+    permalink: /barsbarsbars/:slug/index.html
+
 
 defaults:
   - scope:

@@ -1,0 +1,33 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+
+pagesDir: src # Indeed, in my MVB example, this is where index.md and about.md live.  For Gatsby, more likely to be src/pages.
+uploadDir: assets/uploads
+excludePages:
+  - pages/zanimals/**/* # SB, unlike Jekyll, doesn't re-include explicit subfolders of excluded folders, so be explicit here.
+
+models:
+  sweettreat:
+    type: page
+    label: Sweet Treat
+    folder: 'pages/jekyllunderscore/_bars' # Needed to match the pages to models, for READING content https://www.stackbit.com/docs/stackbit-yaml/page-models/#page_model_matching_properties
+    filePath: 'pages/jekyllunderscore/_bars/{slug}.md' # Fully qualify because nothing to do w/ "folder".  This is for WRITING new pages.
+    urlPath: '/barsbarsbars/{slug}' # This is for WRITING new pages (and also for read).  Not necessary if URL is obvious from file, if doesn't match folder structure, etc.  Problem:  if you try to use a different token than you used in "filePath", you get "lorem-ipsum" for the non-filePath token, which, as a URL, confounds the SSG & consequently Studio, too.  So, basically, Studio doesn't support using more than 1 variable at a time in your filepath/URL, or using a different variable in your filepath/URL, since it only gives you 1 "New page path" data entry field upon new-record-creation.  (That said, they're working on making it prompt you for all required fields in the form, so don't worry about this for long.)
+    fields:
+      - type: slug
+        name: slug
+        label: The Slug
+        description: 'If not happy with what the system generated, you can hand-edit it here'
+        required: true
+      - type: string
+        name: message
+        label: Message
+        required: true
+      - type: string
+        name: attentiongetter
+        label: Attention Getter
+        required: true
+      - type: string
+        name: layout
+        hidden: true
+        const: sugary

@@ -5,7 +5,14 @@
   </head>
   <body class="helloworld">
     <div class="site">
+      <header>{% include navigation.html %}</header>
       <h1>Every sugary-typed page displays its "attention getter" title:  <b>{{ page.attentiongetter }}</b> !!!</h1>
+      
+      {%- capture author_slug -%}
+        {{ page.author | replace: "_data/authors/", "" | replace: ".json", "" }}
+      {%- endcapture -%}
+
+      <div>By {{ site.data.authors[author_slug].first_name }} {{ site.data.authors[author_slug].last_name }}</div>
       <main>{{ page.message }}</main>
     </div>
   </body>

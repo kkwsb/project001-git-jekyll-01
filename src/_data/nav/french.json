@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Acceuil",
+    "url": "/"
+  },
+  {
+    "label": "Blog",
+    "url": "/blog"
+  },
+  {
+    "label": "A propos",
+    "url": "/apropos"
+  }
+]

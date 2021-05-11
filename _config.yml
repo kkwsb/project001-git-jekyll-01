@@ -19,6 +19,9 @@ collections:
   bars: # Per https://talk.jekyllrb.com/t/how-all-collections-inside-one-subdirectory-works/1034/2, you still have to hand-"output: true" each collection subdir
     output: true
     permalink: /barsbarsbars/:slug/index.html
+  blog:
+    output: true
+    permalink: /blog/:slug/index.html
 
 
 defaults:

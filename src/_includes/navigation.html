@@ -1,0 +1,13 @@
+{%- capture nav_menu_slug -%}
+  {{ page.navmenu | replace: "_data/nav/", "" | replace: ".json", "" }}
+{%- endcapture -%}
+
+<ul>
+    {% for item in site.data.nav[nav_menu_slug] %}
+      <li>
+        <a href="{{ item.url }}">
+          {{ item.label }}
+        </a>
+      </li>
+    {% endfor %}
+</ul>

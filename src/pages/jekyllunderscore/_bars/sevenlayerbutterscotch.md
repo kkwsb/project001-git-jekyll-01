@@ -3,6 +3,8 @@ slug: allsevenunderscore
 attentiongetter: Butterscotch
 message: Coconut, too
 layout: sugary
+navmenu: _data/nav/english.json
+author: _data/authors/john.json
 ---
 ## Lorem ipsum
 
